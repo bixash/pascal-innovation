@@ -3,30 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Pascal Innovation</title>
-    <link rel="stylesheet" href="./resources/css/style.css">
+    <style>
+        .p-2{
+            margin: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-
-    <header></header>
-
-    <section class="main-content">
-        <div class="section-container">
-            <h2 class="content-head-title">Pascal Innovation</h2>
-            
-
-        
-            <p>About us goes here</p>
-
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+                </li>    
+            </ul>
+            </div>
         </div>
-       
-        
+    </nav>
 
-    </section>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <footer>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
         
-    </footer>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+            </div> 
+        </div>
+        <div class="carousel-item">
+            <img src="ny.jpg" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+            </div>  
+        </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <h1>Welcome to Pascal Innovation</h1>
+        
+        <div class="row">
+            <div class="col-sm-8 p-3 bg-dark text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est beatae possimus eveniet iste dicta, velit quibusdam optio? Dolorum neque nihil velit dolor asperiores, repudiandae impedit nostrum eligendi maiores labore qui laudantium porro modi eveniet quod cupiditate. Odio error labore modi nihil cumque consequatur minus, aliquid laudantium autem iusto dolor quisquam suscipit praesentium facere est aspernatur, ad ut ratione. Unde, iusto quasi. Non voluptatem, voluptates rerum illum quis assumenda optio commodi delectus adipisci? Quibusdam vitae facilis itaque deserunt id, quis, corporis ad laudantium placeat, velit voluptatibus modi! Non commodi illo cum voluptatum, velit ipsa exercitationem! Consequuntur perspiciatis autem nisi. Ducimus magnam nesciunt enim deserunt, omnis dolor corporis rem saepe! Necessitatibus dignissimos eius officiis, dicta placeat aut. Veniam, atque! Voluptates qui perspiciatis ab tempora consequuntur repellendus delectus nisi ipsum facere ratione aperiam quod ea, in officia hic consequatur mollitia non nam, optio corporis? Dolor blanditiis quas quasi esse maiores distinctio eligendi?</div>
+            <div class="col-sm-4 p-3 bg-primary text-white"> <img src="logo.jpg" class="img-thumbnail" alt="Cinque Terre"> </div>
+        </div>
+
+        <br><br>
+
+        <div class="d-flex justify-content-center mb-3">
+            <div class="p-2 bg-info">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="logo.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-2 bg-warning">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="kath.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-2 bg-primary">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="pubg.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3 ">
+                    <!-- <img src="logo.jpg" alt="" class="rounded" width="140px"> -->
+                </div>
+                <div class="col-sm-2 p-3 ">
+                    <img src="logo.jpg" alt="" class="rounded" width="140px">
+                </div>
+                <div class="col-sm-6 p-3 ">
+                    <br><br>
+                    <span class="material-icons">
+                        call 
+                    </span> 9876543210
+                    <br>
+                    <span class="material-icons">
+                        email
+                    </span> pi@pascalcollege.edu.np
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+    
+    <br><br><br>
     
 </body>
 </html>
